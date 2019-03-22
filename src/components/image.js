@@ -20,3 +20,11 @@ const Image = () => (
   />
 )
 export default Image
+/* position: relative;
+background: rgb(255, 255, 255);
+border-radius: 5px;
+box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.18);
+bottom: -60px;
+padding: 30px 0;
+max-width: 400px;
+margin: auto;*/

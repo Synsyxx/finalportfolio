@@ -30,7 +30,8 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <footer
             style={{
-              fontSize: `15px`,
+              color: `white`,
+              fontSize: `11px`,
             }}
           >
             © {new Date().getFullYear()}, Built by
