@@ -3,6 +3,24 @@ module.exports = {
     title: `Travis R. Simpson`,
     description: `No..I'm Travis! In a world full of Travis's, you must distinguish yourself. It's getting dangerous out there...so here's my portfolio!`,
     author: `@TravisRSimpson`,
+        menuLinks:[
+            {
+               name:'home',
+               link:'/'
+            },
+            {
+               name:'about',
+               link:'/about'
+            },
+            {
+              name:'projects',
+              link:'/projects',
+            },
+            {
+              name:'contact',
+              link:'/contact',
+            }
+          ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
