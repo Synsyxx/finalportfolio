@@ -36,7 +36,7 @@ const Header = ({ siteTitle, menuLinks }) => (
         </Link>
       </h1>
     </div>
-    <nav style={{ display: 'flex', flex: 1 }}>
+    <nav style={{ display: 'flex', flex: 1 }} class="sidenav">
     {
       menuLinks.map(link =>
           <li key={link.name} style={{ 'listStyleType': 'none' }}>

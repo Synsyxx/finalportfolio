@@ -8,7 +8,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}/*
 article,
 aside,
 details,
@@ -20,6 +20,61 @@ main,
 menu,
 nav,
 section,
+*/
+nav.sidenav {
+ margin: 0;
+ padding: 0;
+ width: 16%;
+ background-color: white;
+ position: fixed;
+ height: 100%;
+ overflow: auto;
+}
+
+nav.sidenav a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+}
+
+nav.sidenav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+nav.sidenav a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+nav.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  nav.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  nav.sidenav a {
+    float: left;
+    padding: 15px;
+  }
+
+  nav.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  nav.sidenav a {
+    text-align: center;
+    float: none;
+  }
+}
+/*
 summary {
   display: block;
 }
@@ -32,7 +87,7 @@ video {
 audio:not([controls]) {
   display: none;
   height: 0;
-}
+}*/
 progress {
   vertical-align: baseline;
 }
@@ -49,7 +104,10 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-}
+  color: red;
+  transition: 0.7s;
+  cursor: pointer;
+}/*
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -211,7 +269,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-}
+}*/
 img {
   max-width: 100%;
   margin-left: 0;
@@ -346,7 +404,7 @@ ul {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
-}
+}/*
 ol {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -378,7 +436,7 @@ dd {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+}*/
 p {
   color: white;
   margin-left: 0;
@@ -399,7 +457,7 @@ figure {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+}/*
 pre {
   margin-left: 0;
   margin-right: 0;
@@ -624,3 +682,4 @@ pre tt:after {
     font-size: 100%;
   }
 }
+*/
