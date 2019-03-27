@@ -11,12 +11,8 @@ const Header = ({ siteTitle, menuLinks }) => (
           </li>)
     }
   </nav>*/
-  <header
-    style={{
-      background: `white`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
+    <meta name="viewport" content="initial-scale=1"></meta>
     <div
       style={{
         margin: `0 auto`,
@@ -36,7 +32,7 @@ const Header = ({ siteTitle, menuLinks }) => (
         </Link>
       </h1>
     </div>
-    <nav style={{ display: 'flex', flex: 1 }} class="sidenav">
+    <nav class="sidenav">
     {
       menuLinks.map(link =>
           <li key={link.name} style={{ 'listStyleType': 'none' }}>

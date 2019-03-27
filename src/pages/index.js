@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -14,9 +13,9 @@ const IndexPage = () => (
     <p>I love to travel.</p>
     <p>And ride motorcycles.</p>
     <p>I'm also an avid Coffee Addict.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    {/*<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
-    </div>
+</div> */}
   </Layout>
 )
 
